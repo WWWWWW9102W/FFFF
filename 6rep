@@ -1,0 +1,88 @@
+#ex1
+# names = ["Richard", "Igor", "Jonathan", "Alice", "Mary", "Bonnie"]
+# for x in names:
+#     print(f"Hello {x}!")
+
+#ex2
+# phrase = "I'm learning cycles."
+# for x in range(10):
+#     print(phrase)
+
+#ex3
+# stations = ["Малиновка", "Рябиновка", "Суслово", "Дрожжино", "Звягино"]
+# for NameStation in stations:
+#     if NameStation == stations[-1]:
+#         print(f"Поезд на станции: {NameStation} Конечная")
+#     else:
+#         print(f"Поезд на станции: {NameStation}")
+
+#ex4
+# shop = ["Laptop", "Smartphone", "Watch", "Tablet", "Headphones"]
+# for x in shop:
+#     if x==shop[0]:
+#         print("I'm buying this")
+#     else:
+#         print("i dont need it")
+
+#ex5
+# tasks = ["Сдать проект (Важная)", "Сходить в магазин", "Позвонить врачу (Важная)", "Убраться в комнате", "Подготовить отчёт"]
+# for x, task in enumerate(tasks,1):
+#     if "Важная" in task:
+#         print(f"{x} !!! {task}.")
+#     else:
+#         print(f"{x}. {task}.")
+
+#ex6
+# n=int(input("введите кол-во чисел: "))
+# numb=[]
+# sum=0
+# for i in range(n):
+#     num=int(input(f"введите число {i+1}: "))
+#     numb.append(num)
+#     sum+=num
+# print("список всех введеных чисел: ", numb)
+# print("сумма всех чисел: ",sum)
+
+#ex7
+# i = 1
+# while i < 11:
+#     print('Цикл сработал ', i, 'раз.')
+#     i += 1
+
+#ex8
+# comm = input("введите команду(w,a,s,d,stop): ")
+# if comm == "w":
+#     print("персонаж идет вперед")
+# elif comm == "a":
+#     print("персонаж идет влево")
+# elif comm == "s":
+#     print("персонаж идет назад")
+# elif comm == "d":
+#     print("персонаж идет вправо")
+# elif comm == "stop":
+#     print("программа остановлена")
+# else:
+#     print("неизвестная команда, попробуйте еще раз")
+
+#ex9
+# n=int(input("введите число от 1 до 9: "))
+# if n>9:
+#     print("число вне диапазона")
+# else:
+#     for i in range(1,11):
+#         print(f"{n}*{i}={n*i}")
+#
+
+#ex10
+# zagadka=input("ползун ползет, иголки везет. ответ? ")
+# ans="ежик"
+# pop=3
+# while zagadka!=ans:
+#     pop -= 1
+#     print(f"неправильно! у вас осталось {pop} попыток.")
+#     zagadka = input("ползун ползет, иголки везет. ответ? ")
+#     if pop == 0:
+#         print("игра закончена")
+#         break
+# else:
+#     print("ты угадал!")
