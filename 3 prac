@@ -1,0 +1,60 @@
+#ex 1
+# hm=int(input("vvedi dannie: "))
+# h=hm//60
+# m=hm%60
+# print(f"{h} часов, {m}
+# ex 2
+# a=8
+# b=12
+# h=int(input("vvedite skolko spit Anya: "))
+# if h<a:
+#     print("nedosip")
+# if h>b:
+#     print("peresip")
+# if a<h<b:
+#     print("eto normalno")
+#ex 3
+# a=int(input("введите значение 1 стороны треугольника: "))
+# b=int(input("введите значение 2 стороны треугольника: "))
+# c=int(input("введите значение 3 стороны треугольника: "))
+# p=(a+b+c)/2
+# g=(p*(p-a)*(p-b)*(p-c))**0.5
+# print(f"рассчитаем полупериметр: ({a}+{b}+{c})/2 = {p}")
+# print(f"возьмем формулу Герона для расчета. площадь треугольника по формуле Герона равна (p*(p-a)*(p-b)*(p-c))**0.5, то есть {g})")
+#ex 4
+# f = input("дайте тип комнаты(круг, треугольник, прямоугольник): ")
+# if f == "треугольник":
+#     a = float(input())
+#     b = float(input())
+#     c = float(input())
+#     s = (a + b + c) / 2
+#     area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+#     print(area)
+# elif f == "прямоугольник":
+#     length = float(input())
+#     width = float(input())
+#     area = length * width
+#     print(area)
+# elif f == "круг":
+#     r = float(input())
+#     area = pi * radius ** 2
+#     print(area)
+# 
+#ex 5
+# n = int(input())
+# if n % 10 == 1 and n % 100 != 11:
+#     print(f"{n} программист")
+# elif 2 <= n % 10 <= 4 and not (12 <= n % 100 <= 14):
+#     print(f"{n} программиста")
+# else:
+#     print(f"{n} программистов")
+# 
+#ex 6
+# ticket_number = input()
+# if len(ticket_number) == 6:
+#     left_sum = sum(int(ticket_number[i]) for i in range(3))
+#     right_sum = sum(int(ticket_number[i]) for i in range(3, 6))
+#     if left_sum == right_sum:
+#         print("cчастливый")
+#     else:
+#         print("oбычный")
