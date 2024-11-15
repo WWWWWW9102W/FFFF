@@ -1,0 +1,41 @@
+# Создание переменных
+first_num = 9
+second_num = 7.8
+my_str = "start"
+
+# Вывод значений переменных
+print(first_num, second_num, my_str)
+
+# Изменение значения первой переменной
+first_num = 5.2
+
+# Вывод значения и типа данных first_num
+print(first_num, type(first_num))
+
+# Создание третьей переменной
+third_num = first_num + second_num
+
+# Вывод значения и типа данных third_num
+print(third_num, type(third_num))
+
+# Увеличение значений переменных
+first_num += 5
+second_num += first_num
+
+# Вывод измененных значений
+print(first_num, second_num)
+
+# Преобразование second_num в целое число
+second_num = int(second_num)
+
+# Вывод новых значений
+print(first_num, second_num)
+
+# Изменение строки my_str
+my_str += "&stop"
+
+# Вывод измененного my_str
+print(my_str)
+
+# Умножение строки my_str
+print(my_str * 5)
