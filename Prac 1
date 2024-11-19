@@ -39,3 +39,74 @@ print(my_str)
 
 # Умножение строки my_str
 print(my_str * 5)
+
+#ex2
+# Создаем переменную path и присваиваем значение
+path = "C:\\Users) MainAdmin) \\Desktop Nprograms*-"
+# Выводим значение переменной path
+print(path)
+
+# Добавляем строку к переменной path
+path += "\\game.exe"
+# Выводим измененное значение переменной path
+print(path)
+
+# Меняем значение переменной path
+path = "C:\\Users\\MainAdmin\\Desktop\\files"
+# Добавляем строку к переменной path
+path += "\\picture.png"
+# Выводим измененное значение переменной path
+print(path)
+
+# Меняем значение переменной path
+path = "C:\\Games\\city simulation"
+# Умножаем значение переменной path на 2
+path *= 2
+# Выводим сообщение об ошибке
+print("Error path:", path)
+
+#ex3
+# 1. Создаем три переменные
+pit_1 = 7
+pit_2 = 10
+pit_3 = 4
+
+# Находим сумму и выводим результат
+zitt = pit_1 + pit_2 + pit_3
+print("Сумма всех целых чисел:", zitt)
+
+# Изменяем значения переменных
+pit_1 = 7.9
+pit_2 = 21.3
+pit_3 = float(pit_3)
+
+# Находим новую сумму и выводим результат
+summ = pit_1 + pit_2 + pit_3
+print("Сумма всех целых чисел:", summ)
+
+# Изменяем значения переменных
+pit_1 = 130
+pit_2 = 4
+pit_3 = 2
+
+# Находим произведение и выводим результат
+multiplying = pit_1 * pit_2 * pit_3
+print("Умножение всех чисел:", multiplying)
+
+# Находим результат деления
+division = pit_1 / pit_2 / pit_3
+print("Деление:", division)
+
+# Изменяем значения переменных
+pit_1 = 2
+pit_2 = 3
+pit_3 = 4
+
+# Находим pit_1 в степени pit_2 в степени pit_3
+degree = pit_1 ** (pit_2 ** pit_3)
+print("Числа в степени:", degree)
+
+# Изменяем значения переменных
+pit_1 = 2
+pit_2 = 8
+pit_3 = 5
