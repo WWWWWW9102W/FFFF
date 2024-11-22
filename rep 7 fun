@@ -1,0 +1,7 @@
+#ex1
+def create_car(brand, color, max_speed)
+    return f"марка: {brand} Цвет: {color} Максимальная скорость: {max_speed} км/ч"
+car_1 = create_car("Toyota", "черный", 410)
+car_2 = create_car("Audi", "красный", 350)
+print(car_1)
+print(car_2)
