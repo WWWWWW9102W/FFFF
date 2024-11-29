@@ -34,3 +34,24 @@ def triangle(a,b,c):
         print(f"Длина сторон треугольника:  {a}, {b}, {c}\nИнформация: \nРавнобедренный треугольник. ")
     else:
         print(f"Длина сторон треугольника:  {a}, {b}, {c}\nИнформация: \nРазносторонний треугольник.")
+def triangle(a, b, c):
+    if a + b <= c or a + c <= b or b + c <= a:
+        print("Некорректные стороны. Невозможно построить треугольник.")
+        return
+    perimeter = a + b + c
+    s = perimeter / 2
+    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+    if a == b == c:
+        triangle_type = "Равносторонний треугольник."
+    elif a == b or a == c or b == c:
+        triangle_type = "Равнобедренный треугольник."
+    else:
+        triangle_type = "Разносторонний треугольник."
+    print(f"Длина сторон треугольника: {a}, {b}, {c}")
+    print(f"Информация:\n{triangle_type}")
+    print(f"Периметр: {perimeter}")
+    print(f"Площадь: {area:.2f}")
+triangle(15, 15, 15)  # Равносторонний
+triangle(15, 20, 15)  # Равнобедренный
+triangle(15, 20, 25)  # Разносторонний
+triangle(1, 2, 3)     # Некорректные
