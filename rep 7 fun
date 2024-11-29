@@ -5,3 +5,21 @@ car_1 = create_car("Toyota", "черный", 410)
 car_2 = create_car("Audi", "красный", 350)
 print(car_1)
 print(car_2)
+#ex2
+# a = int(input("введи число 1 стороны: "))
+# b = int(input("введи число 2 стороны: "))
+# c = int(input("введи число 3 стороны: "))
+# print(f"итого у нас стороны со значениями {a},{b} и {c}")
+# p = a + b + c
+# s = p / 2
+# g = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+# f = round(g,2)
+# def triangle(a,b,c):
+#     if a==b and a==c and b==c:
+#         print("тип треугольника - равносторонний")
+#     elif a==b!=c or a!=b==c or a==c!=b:
+#         print("тип треугольника - равнобедренный")
+#     elif a!=b!=c:
+#         print("тип треугольника - разносторонный")
+# triangle(a,b,c)
+# print(f"периметр - {p}, \nполупериметр - {s}, \nплощадь - {f}")
