@@ -1,0 +1,101 @@
+# variant 1
+# ex1
+# a=int(input())
+# if a<0:
+#     print(-a)
+# elif a==0:
+#     print(1)
+# else:
+#     print(a)
+# ex2
+# a=input()
+# if '.' in a or ',' in a:
+#     print(True)
+# else:
+#     print(False)
+# ex3
+# a=int(input())
+# b=int(input())
+# if a%3==0 and b%3==0:
+#     print(True)
+# elif a%3==0 or b%3==0:
+#     print("Одно число делится на 3")
+# else:
+#     print(False)
+# variant 2
+# ex1
+# a=int(input("введи число "))
+# if a>100:
+#     print("*")
+# elif a<0:
+#     print("none")
+# else:
+#     print('*'*a)
+# ex2
+# a=input("введи строку ")
+# b=input("введи строку ")
+# if a==b:
+#     print(True)
+# else:
+#     print(False)
+# r=int(input("введи число "))
+# g=int(input("введи число "))
+# b=int(input("введи число "))
+# if r==255 and g==b==0:
+#     print("красный")
+# elif g==255 and r==b==0:
+#     print("зеленый")
+# elif b==255 and r==g==0:
+#     print("синий")
+# else:
+#     print("нет цвета")
+# variant 3
+# ex1
+# a=int(input("введи число "))
+# if a>0:
+#     print(a-1, a, a+1)
+# if a<0 or a==0:
+#     print(1-1,1,1+1)
+# ex2
+# a=input("введи файл(.py, .txt, .doc): ")
+# if '.py' in a:
+#     print("python file")
+# if '.txt' in a:
+#     print("notebook file")
+# if '.doc' in a:
+#     print("word file")
+# ex3
+# a = int(input("введи число 1 стороны: "))
+# b = int(input("введи число 2 стороны: "))
+# c = int(input("введи число 3 стороны: "))
+# if a==b and a==c and b==c:
+#     print("тип треугольника - равносторонний")
+# elif a==b!=c or a!=b==c or a==c!=b:
+#     print("тип треугольника - равнобедренный")
+# elif a!=b!=c:
+#     print("тип треугольника - разносторонный")
+# variant 4
+# ex 1
+# text="important information in one line"
+# a=input("введи букву ")
+# if a in text:
+#     print(True)
+# else:
+#     print(False)
+# ex2
+# a=int(input("введи 1 сторону "))
+# b=int(input("введи 2 сторону "))
+# s=a*b
+# if a==b:
+#     print(f"тип фигуры - квадрат, площадь - {s}")
+# else:
+#     print(f"тип фигуры - прямоугольник, площадь - {s}")
+# ex3
+# print("как ты себя чувствуешь? ")
+# a=input()
+# if a=="хорошо" or "нормально" or "отлично":
+#     print(":)")
+# if a == "не хорошо" or "не хорошо" or "...":
+#     print(":(")
+# else:
+#     print(":/")
