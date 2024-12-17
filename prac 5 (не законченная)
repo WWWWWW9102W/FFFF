@@ -1,0 +1,8 @@
+#ex1
+figures = ["круг",0.25, "квадрат", "треугольник", 15, "круг","овал",'10']
+for item in figures.copy():
+    if not isinstance(item, str):
+      figures.remove(item)
+      for name in ['круг', 'квадрат', 'треугольник', 'круг', 'овал']:
+if name not in figures:
+    figures.remove(name)
