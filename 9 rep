@@ -8,14 +8,29 @@ class CreatePersonage:
 
         def print_info(self):
             print(f"name: {self.name_pers}\nclass: {self.Class_pers}\nhp: {self.hp_pers}\ndamage: {self.damage_per}\n")
+
         def go_on_a_trip(self):
             print(f"pers {self.name_pers} отправился в путешествие и пока не доступен")
-        def start_training(self):
+
+        def go_back(self):
             print(f"pers {self.name_pers} возвращается назад")
+
         def start_training(self):
-        self.hp_pers += 3
+            self.hp_pers += 3
+
         self.damage_pers += 5
         print(f"pers {self.name_pers} начал тренировку. Некоторое время он не будет доступен, однако станет сильнее!\n")
+
         def start_the_battle(self):
             print(f"pers {self.name_pers} хочет начать сражаться!\nЕго показатели: Жизни: {self.hp_pers}, Урон: {self.damage_pers}\n")
-            pers_1 = CreatePersonage("Игорь", "Боец", 99, 15)
+
+        pers_1 = CreatePersonage("Игорь", "Боец", 99, 15)
+
+        pers_1 = CreatePersonage("Игорь", "Боец", 99, 15)
+        pers_1.print_info()
+        pers_1.go_on_a_trip()
+        pers_1.go_back()
+        pers_1.start_training()
+        pers_1.print_info()
+        pers_1.start_the_battle()
+        
