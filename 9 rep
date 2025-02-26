@@ -33,4 +33,40 @@ class CreatePersonage:
         pers_1.start_training()
         pers_1.print_info()
         pers_1.start_the_battle()
-        
+
+#ex2
+class Room:
+    items=[]
+    theme=[]
+    def __init__(self, name):
+        self.name = name
+    def print_items(self):
+        print(f"Все предметы в комнате {self.name}: {', '.join(self.items)}")
+
+    def add_item(self, *item):
+        self.items.extend(item)
+    def del_item(self, item):
+        if item in self.items:
+            self.items.remove(item)
+            print(f"Все предметы в комнате: {', '.join(self.items)}")
+        else:
+            print("Такого предмета нет в комнате")
+
+    def add_decore(self, *items):
+        self.items.extend(items)
+
+    def set_theme(self, theme):
+        self.theme.extend(theme)
+
+    def print_theme(self):
+        print(f"У вас установлена {str(self.theme)} тема")
+
+
+room1 = Room("Кухня")
+room1.add_item("Холодильник", "Стул", "Стол")
+room1.print_items()
+room1.del_item("Стул")
+room1.add_decore("Kартина")
+room1.set_theme("классическая")
+room1.print_items()
+room1.print_theme()
