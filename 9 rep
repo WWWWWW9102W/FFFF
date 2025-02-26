@@ -70,6 +70,7 @@ room1.add_decore("Kартина")
 room1.set_theme("классическая")
 room1.print_items()
 room1.print_theme()
+
 #ex3
 class Students:
     def __init__(self, name, kurs, sr_ball):
