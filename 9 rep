@@ -70,3 +70,45 @@ room1.add_decore("Kартина")
 room1.set_theme("классическая")
 room1.print_items()
 room1.print_theme()
+#ex3
+class Students:
+    def __init__(self, name, kurs, sr_ball):
+        self.name = name
+        self.kurs = kurs
+        self.sr_ball = sr_ball
+
+    def st_info(self):
+        print(f"имя студента: {self.name}, курс: {self.kurs}, средний балл: {self.sr_ball}")
+
+    def kurs_up(self):
+        if self.kurs>=4:
+            print(f"студент {self.name} уже закончил(а) обучение")
+        else:
+            self.kurs+=1
+            print(f"студент {self.name} переведен на {self.kurs}-й курс")
+
+    def ball_up(self, ball):
+        if 5< ball <0:
+            print(f"ср.балл не входит в диапазон допущенного")
+        else:
+            self.sr_ball = (self.sr_ball+ball)/2
+            print(f"обновление среднего балла - {self.sr_ball}")
+
+    def stipendiat(self):
+        if self.sr_ball>=4.5:
+            print(f"студент {self.name} имеет право быть стипендиатом")
+        else:
+            print(f"студент {self.name} не имеет права быть стипендиатом")
+
+st_1 = Students("Максим", 1,4.8)
+st_2 = Students("Олег", 2, 4.0 )
+st_3 = Students("Алексей", 3,4.5)
+st_1.kurs_up()
+st_2.kurs_up()
+st_3.kurs_up()
+st_1.ball_up(5)
+st_2.ball_up(4)
+st_3.ball_up(3)
+st_1.stipendiat()
+st_2.stipendiat()
+st_3.stipendiat()
